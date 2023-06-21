@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import axios from 'axios';
 import {exec} from 'child_process';
 
 function downloadFile(response, filename) {
@@ -85,6 +86,9 @@ function parseLines(text) {
   return lines;
 }
 
+function formatString(template, values) {
+  return template.replace(/\${(\w+)}/g, (match, key) => values[key]);
+}
 
 export {
   downloadFile,
@@ -94,5 +98,6 @@ export {
   getAllFiles,
   getRandomSample,
   parseChat,
-  parseLines
+  parseLines,
+  formatString
 };
