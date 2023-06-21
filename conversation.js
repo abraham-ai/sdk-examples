@@ -85,6 +85,10 @@ export async function conversation(
     final_videos.push(video);
   }
 
+  //////////////////////////////////////////////////////
+  // 3) concatenate videos into one
+
   console.log(final_videos);
   await concatenateVideos(final_videos, "output");
+  
 }
