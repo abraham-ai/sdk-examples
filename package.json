@@ -2,10 +2,10 @@
   "name": "sdk-examples",
   "version": "1.0.0",
   "description": "Eden SDK examples and templates",
-  "main": "conversation.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
-    "test": "node conversation.js"
+    "test": "node main.js"
   },
   "repository": {
     "type": "git",
