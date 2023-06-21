@@ -1,0 +1,6 @@
+.env
+*.mp4
+*.txt
+package-lock.json
+.DS_Store
+node_modules
