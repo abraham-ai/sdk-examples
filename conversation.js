@@ -17,7 +17,6 @@ The topic of the conversation is \${selectedTopic}.
 
 Write a conversation between these \${nCharacters} characters that is at least 500 words long. It should be formatted as a chat, one line for each message. No one should speak except these \${nCharacters} characters.`;
 
-
 export async function conversation(
   selectedCharacters, 
   selectedTopic, 
